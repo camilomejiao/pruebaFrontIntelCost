@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { WorkComponent } from './components/work/work.component';
 import { AboutComponent } from './components/about/about.component';
-import { TeamComponent } from './components/team/team.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -18,7 +17,6 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     WorkComponent,
     AboutComponent,
-    TeamComponent,
     PortfolioComponent,
     PricingComponent,
     ContactComponent
