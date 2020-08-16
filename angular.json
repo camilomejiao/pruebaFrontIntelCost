@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "FrontIntelCost": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "FrontIntelCost"
+    }
+  },
+  "defaultProject": "FrontIntelCost",
+  "cli": {
+    "analytics": "a314cde7-1026-4a23-b5ac-8336009b283c"
+  }
 }
