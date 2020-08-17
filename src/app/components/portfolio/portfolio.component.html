@@ -18,6 +18,12 @@
             <li><a href="#" class="opc-main-bg" (click)="search('feelings')" >Feelings</a></li>
             <li><a href="#" class="opc-main-bg" (click)="search('computer')" >Computer</a></li>
             <li><a href="#" class="opc-main-bg" (click)="search('buildings')" >Buildings</a></li>
+            <li>
+              <form #form="ngForm" (ngSubmit)="search(form)" class="form-horizontal form-material">
+                <li><input name="wordSearch" [(ngModel)]="wordSearch" class="form-control" type="text" placeholder="Word"></li>
+                <li><button class="btn btn-primary" type="submit">Search</button></li>
+              </form>
+            </li>
           </ul>
           <div class="iso-box-section wow fadeIn" data-wow-delay="0.9s">
             <div class="iso-box-wrapper col4-iso-box">

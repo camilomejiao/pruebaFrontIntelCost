@@ -22,14 +22,22 @@ export class PhotoService {
     this.url = GLOBAL.url;
   }
 
-  conectarImagenes(work){
-    let url = this.url + '?key=13119377-fc7e10c6305a7de49da6ecb25' +'&category='+work;
+  conectarImagenes(word){
+    let url = this.url + '?key=13119377-fc7e10c6305a7de49da6ecb25' +'&category='+word;
     let headers = new HttpHeaders().set('Content-Type', 'application/json');
     return this._http.get(url).map(
       (resp: any)  => {
         return resp;
     });
+  }
 
+  BuscarXPalabra(word) {
+    let url = this.url + '?key=13119377-fc7e10c6305a7de49da6ecb25' + '&lang=es&q=' + word;
+    let headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this._http.get(url).map(
+      (resp: any) => {
+        return resp;
+      });
   }
 
 
